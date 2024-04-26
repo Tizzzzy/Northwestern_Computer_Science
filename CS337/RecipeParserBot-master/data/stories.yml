@@ -1,0 +1,135 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: recipe parse
+  steps:
+  - intent: request_recipe_walkthrough
+  - action: utter_ask_for_recipe_url
+  - intent: provide_recipe_url
+  - action: action_process_recipe
+  - intent: option_choose
+  - action: action_option_choose
+
+- story: recipe walkthrough
+  steps:
+  - intent: next_step
+  - action: action_next_step
+  - intent: previous_step
+  - action: action_prev_step
+  - intent: current_step
+  - action: action_current_step
+  - intent: display_ingredients
+  - action: action_display_ingredients
+  - intent: display_tools
+  - action: action_display_tools
+  - intent: display_time
+  - action: action_display_time
+  - intent: display_actions
+  - action: action_display_actions
+  - intent: display_all_ingredients
+  - action: action_display_all_ingredients
+  - intent: display_all_tools
+  - action: action_display_all_tools
+  - intent: transform_vegan
+  - action: action_transform_vegan
+  - intent: transform_unhealthy
+  - action: action_transform_unhealthy
+  - intent: transform_southeast_asian
+  - action: action_transform_southeast_asian
+  - intent: transform_non_vegan
+  - action: action_transform_non_vegan
+  - intent: transform_chinese
+  - action: action_transform_chinese
+  - intent: transform_back_to_original
+  - action: action_transform_back_to_original
+
+
+- story: recipe query
+  steps:
+  - intent: how_to_query
+  - action: action_answer_how_to_query
+  - intent: what_query
+  - action: action_answer_what_query
+
+# - story: recipe transform
+#   steps:
+#   - intent: transform_vegan
+#   - action: action_transform_vegan
+#   - intent: transform_unhealthy
+#   - action: action_transform_unhealthy
+#   - intent: transform_southeast_asian
+#   - action: action_transform_southeast_asian
+#   - intent: transform_non_vegan
+#   - action: action_transform_non_vegan
+#   - intent: transform_chinese
+#   - action: action_transform_chinese
+#   - intent: transform_back_to_original
+#   - action: action_transform_back_to_original
+  
+- story: app exit
+  steps:
+  - intent: goodbye
+  - action: action_refresh
+
+- story: navigate steps
+  steps:
+  - intent: navigate_steps
+  - action: action_navigate_steps
+
+# - story: process recipe url
+#   steps:
+#   - intent: provide_recipe_url
+#   - action: action_process_recipe
+
+# - story: choose one option
+#   steps:
+#   - intent: option_choose
+#   - action: action_option_choose
+
+# - story: answer how to
+#   steps:
+#   - intent: how_to_query
+#   - action: action_answer_how_to_query
+
+# - story: next step
+#   steps:
+#   - intent: next_step
+#   - action: action_next_step
+
+# - story: previous step
+#   steps:
+#   - intent: previous_step
+#   - action: action_prev_step
+
+# - story: current step
+#   steps:
+  # - intent: current_step
+  # - action: action_current_step

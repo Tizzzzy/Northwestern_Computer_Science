@@ -1,0 +1,290 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good bye
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - refresh
+    - forget
+    - forget this recipe
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: request_recipe_walkthrough
+  examples: |
+    - walk me through a recipe from AllRecipes.com.
+    - can you guide me through a recipe?
+    - help me cook a recipe from a website.
+
+- intent: provide_recipe_url
+  examples: |
+    - [https://www.allrecipes.com/recipe/218091/classic-and-simple-meat-lasagna](url)
+    - here's the link: [https://www.example.com](url)
+    - check this [https://www.example.com](url)
+
+- intent: option_choose
+  examples: |
+    - [1](option)
+    - [2](option)
+    - [3](option)
+    - i choose [1](option)
+
+- intent: previous_step
+  examples: |
+    - last step
+    - previous step
+    - go back
+    - previous
+    - back
+    - go back to previous step
+    - go back to last step
+    - go to previous step
+    - go to last step
+    - go back to the last step
+    - go back to the previous step
+    - go to the last step
+    - go to the previous step
+    - what step came before
+    - show previous step again
+
+- intent: current_step
+  examples: |
+    - what is the current step
+    - what is the current instruction
+    - what now
+    - display the current step
+    - what step am I on
+    - what should I do
+    - repeat
+    - say again
+
+- intent: next_step
+  examples: |
+    - what is the next step
+    - what is the next instruction
+    - next
+    - what next
+    - show me what comes next
+    - display the next step
+    - what should i do next
+    - done
+    - finished
+
+- intent: how_to_query
+  examples: |
+    - i do not know how to bake a cake
+    - how do i preheat the oven
+    - how to mince
+    - how do i bake a cake
+    - i don't know how to baste an egg
+    - idk how to mince
+
+- intent: what_query
+  examples: |
+    - i do not know what is rice cooker
+    - what is pan
+    - what are eggs
+    - i don't know what are eggs
+    - idk what is pan
+
+- intent: display_ingredients
+  examples: |
+    - what are the ingredients
+    - what ingredients do i need
+    - what do i need
+    - what are the ingredients for this step
+
+- intent: display_tools
+  examples: |
+    - what tools do i need
+    - what tools are required
+    - what tools do i need for this step
+
+- intent: display_all_ingredients
+  examples: |
+    - show me all the ingredients
+    - ingredients list
+    - all ingredients
+
+- intent: display_all_tools
+  examples: |
+    - show me all the tools
+    - tool list
+    - all tools
+
+- intent: display_actions
+  examples: |
+    - what actions do i need
+    - what actions are required
+    - what actions do i need for this step
+    - what methods do i need
+    - what methods are required
+    - what methods do i need for this step
+
+- intent: display_time
+  examples: |
+    - how long does this take
+    - how long does this step take
+
+- intent: navigate_steps
+  examples: |
+    - take me to the [1st](step_number) step
+    - go to the [second](step_number) step
+    - show the [3rd](step_number) step
+    - i want to see the [fourth](step_number) step
+    - navigate to step [5](step_number)
+    - go to step [6](step_number)
+    - show step [7](step_number)
+    - show [7th](step_number) step
+    - i want to see step [8](step_number)
+    - take me to step [9](step_number)
+
+- intent: transform_vegan
+  examples: |
+    - can you make it vegan
+    - vegan verison
+    - i am vegan
+    - i want a vegan version
+    - transform to vegan
+    - make it vegan
+    - i would like a vegan version
+
+- intent: transform_unhealthy
+  examples: |
+    - can you make it healthy
+    - healthy verison
+    - i am on a diet
+    - i want a healthy version
+    - transform to healthy
+    - make it healthy
+    - i would like a healthy version
+
+- intent: transform_chinese
+  examples: |
+    - can you make it chinese
+    - chinese verison
+    - i am a chinese
+    - i want a chinese version
+    - transform to chinese
+    - make it chinese
+    - i would like a chinese version
+
+- intent: transform_southeast_asian
+  examples: |
+    - can you make it southeast asian
+    - southeast asian verison
+    - i am southeast asian
+    - i want a southeast asian version
+    - transform to southeast asian
+    - make it southeast asian
+    - i would like a southeast asian version
+
+- intent: transform_non_vegan
+  examples: |
+    - can you make it non vegan
+    - non vegan verison
+    - i am not vegan
+    - i want a non vegan version
+    - transform to non vegan
+    - make it non vegan
+    - i would like a non vegan version
+
+- intent: transform_back_to_original
+  examples: |
+    - can you make it back to original
+    - original verison
+    - i want the original version
+    - transform back to original
+    - make it back to original
+    - i would like the original version
+    - normal version
+    - i want the normal version
+    - transform back to normal
+
+
+- regex: url
+  examples: |
+    - \bhttps?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:\/[-a-zA-Z0-9()@:%_\+.~#?&//=]*)?

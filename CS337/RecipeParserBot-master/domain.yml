@@ -1,0 +1,100 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - request_recipe_walkthrough
+  - provide_recipe_url
+  - option_choose
+  - how_to_query
+  - next_step
+  - previous_step
+  - current_step
+  - display_ingredients
+  - display_tools
+  - display_actions
+  - display_time
+  - what_query
+  - navigate_steps
+  - display_all_ingredients
+  - display_all_tools
+  - transform_back_to_original
+  - transform_vegan
+  - transform_unhealthy
+  - transform_southeast_asian
+  - transform_non_vegan
+  - transform_chinese
+
+actions:
+  - action_process_recipe
+  - action_option_choose
+  - action_answer_how_to_query
+  - action_next_step
+  - action_prev_step
+  - action_current_step
+  - action_display_ingredients
+  - action_display_tools
+  - action_display_time
+  - action_display_actions
+  - action_answer_what_query
+  - action_refresh
+  - action_navigate_steps
+  - action_display_all_ingredients
+  - action_display_all_tools
+  - action_transform_vegan
+  - action_transform_unhealthy
+  - action_transform_southeast_asian
+  - action_transform_non_vegan
+  - action_transform_back_to_original
+  - action_transform_chinese
+
+entities:
+  - url
+  - option
+  - step_number
+
+slots:
+  recipe_url:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: url
+
+  cur_step:
+    type: any
+    mappings:
+      - type: custom
+    initial_value: -1
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Refreshed! Please provide a new URL, or say /stop to exit."
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_for_recipe_url:
+  - text: "Sure, please provide the URL."
+
+session_config:
+  session_expiration_time: 180
+  carry_over_slots_to_new_session: true
