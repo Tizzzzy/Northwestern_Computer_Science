@@ -1,4 +1,4 @@
-This is the official repository for "[Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI]([https://arxiv.org/pdf/2309.10253.pdf](https://arxiv.org/pdf/2403.10559))" by [Dong Shu](https://scholar.google.com/citations?user=KfIlTroAAAAJ&hl=en&scioq=Generative+Models+and+Connected+and+Automated+Vehicles:+A+Survey+in+Exploring+the+Intersection+of+Transportation+and+AI), Zhouyao Zhu.
+This is the official repository for "[Generative Models and Connected and Automated Vehicles: A Survey in Exploring the Intersection of Transportation and AI](https://arxiv.org/pdf/2403.10559)" by [Dong Shu](https://scholar.google.com/citations?user=KfIlTroAAAAJ&hl=en&scioq=Generative+Models+and+Connected+and+Automated+Vehicles:+A+Survey+in+Exploring+the+Intersection+of+Transportation+and+AI), Zhouyao Zhu.
 
 ## Cite
 
