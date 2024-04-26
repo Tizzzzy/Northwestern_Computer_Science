@@ -1,0 +1,2 @@
+The latest version of Python is 3.12.1, and you have version 3.12.0 installed.
+Python is running in a virtual environment called nl2sql2, located at C:\Users\super\anaconda3\envs\nl2sql2.
