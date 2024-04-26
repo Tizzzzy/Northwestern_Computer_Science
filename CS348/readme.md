@@ -6,6 +6,8 @@ Please follow both [Northwestern University's Principles of Academic Integrity](
 
 ## Past Assignments
 
+Setup -- 100/100
+
 Search -- 100/100
 
 Game AI -- 100/100
