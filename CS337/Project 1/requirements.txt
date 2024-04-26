@@ -1,0 +1,13 @@
+# pip install -r requirements.txt
+emoji
+requests
+rapidfuzz
+cinemagoer
+bing-image-downloader
+pandas
+numpy
+<<<<<<< HEAD
+nltk
+=======
+nltk
+>>>>>>> 11b6495a53f94baa740df03059e2b5f19d0bf73a
